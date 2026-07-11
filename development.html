@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Development — Noble Homes | Nobsed Properties</title>
+<meta name="description" content="Noble Homes Block A — a boutique collection of 3-bedroom semi-detached townhouses in Ghana. Explore unit features, technical floor plans and architectural renders." />
+<link rel="icon" type="image/svg+xml" href="images/logo-mark.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { primary:'#1A1A1A', secondary:'#666666', accent:'#2D4F1E', border:'#E2E2E2', background:'#F9F8F6', foreground:'#1A1A1A', muted:'#F1F0EE', 'muted-foreground':'#A1A1A1' },
+    fontFamily: { serif:['"Playfair Display"','Georgia','serif'], heading:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
+  }}};
+</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="development" class="bg-background text-foreground">
+<div id="nav"></div>
+
+<main class="page-offset">
+  <!-- HERO (light split) -->
+  <section class="pt-16 md:pt-24 pb-20 md:pb-28 bg-background overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal">
+        <div class="inline-flex items-center space-x-2 text-accent uppercase tracking-[0.3em] text-xs font-sans mb-6"><i data-lucide="map" class="w-4 h-4"></i><span>The Noble Homes • Block A</span></div>
+        <h1 class="text-primary text-5xl md:text-6xl lg:text-7xl mb-8 leading-[1.06] font-serif">A Vision of <br /><span class="italic">Timeless Living.</span></h1>
+        <p class="text-secondary text-lg font-sans max-w-xl leading-relaxed mb-10">A boutique collection of meticulously crafted 3-bedroom semi-detached townhouses, blending architectural integrity with modern Ghanaian luxury.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#floorplans" class="btn-primary bg-accent text-white hover:bg-[#1E3A14]">Explore Block A <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
+          <a href="investment.html#contact" class="btn-outline border-primary text-primary hover:bg-primary hover:text-white">Download Brochure</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="relative aspect-[4/3] w-full plate-dark overflow-hidden">
+          <img src="images/hero-exterior.png" alt="Noble Homes villa render" class="img-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIT DETAILS -->
+  <section class="section-container bg-white">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <span class="text-xs uppercase tracking-[0.2em] font-bold text-accent block mb-4">Architecture &amp; Design</span>
+        <h2 class="mb-8 font-serif leading-tight text-4xl md:text-5xl">The 3-Bedroom <br />Semi-Detached Townhouse</h2>
+        <p class="text-lg text-secondary mb-10 leading-relaxed font-sans">Noble Homes Block A offers a refined residential experience. Each unit is thoughtfully oriented to maximize natural light and ventilation, featuring premium finishes and an intelligent layout that adapts to the needs of the modern family.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8" data-unit-features></div>
+      </div>
+      <div class="relative aspect-[4/5] overflow-hidden plate reveal">
+        <img src="images/render-living.jpg" alt="Interior detail" class="img-contain transition-transform duration-700 hover:scale-[1.03]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOOR PLANS -->
+  <section id="floorplans" class="py-24 md:py-32 bg-background">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16 reveal">
+        <h2 class="font-serif mb-6 text-4xl md:text-5xl">Technical Layouts</h2>
+        <div class="w-20 h-1 bg-accent mx-auto mb-8"></div>
+        <p class="max-w-2xl mx-auto text-secondary font-sans">Precision-engineered floor plans designed for the optimal Ghanaian lifestyle. Select a floor level to view the full architectural drawing.</p>
+      </div>
+      <div class="flex justify-center mb-12 space-x-8">
+        <button class="floor-tab pb-4 text-sm uppercase tracking-widest font-bold transition-all text-accent border-b-2 border-accent" data-plan="ground">Ground Floor</button>
+        <button class="floor-tab pb-4 text-sm uppercase tracking-widest font-bold transition-all text-muted-foreground hover:text-primary" data-plan="first">First Floor</button>
+      </div>
+      <div class="bg-white p-4 md:p-10 rounded-sm border border-border">
+        <div class="floor-panel grid grid-cols-1 lg:grid-cols-12 gap-10" data-plan="ground">
+          <div class="lg:col-span-8 order-2 lg:order-1 plate-white p-4 md:p-6 border border-border relative flex items-center justify-center min-h-[360px] md:min-h-[560px]">
+            <img src="images/plan-ground.png" alt="Ground floor plan" class="img-contain" />
+            <div class="absolute top-5 right-5 text-[10px] text-muted-foreground uppercase tracking-[0.2em] pointer-events-none">© Nobsed Properties · Drawing 001/A</div>
+          </div>
+          <div class="lg:col-span-4 order-1 lg:order-2 flex flex-col justify-center">
+            <h3 class="font-serif text-2xl mb-4">Ground Floor Features</h3>
+            <p class="text-secondary font-sans text-sm mb-8 leading-relaxed">The social hub of the home, designed for seamless flow and functionality.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Kitchen &amp; Pantry</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Dining Area</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Spacious Living Room</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Visitor's WC</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Laundry &amp; Storage</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Front &amp; Rear Access</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="floor-panel hidden grid-cols-1 lg:grid-cols-12 gap-10" data-plan="first">
+          <div class="lg:col-span-8 order-2 lg:order-1 plate-white p-4 md:p-6 border border-border relative flex items-center justify-center min-h-[360px] md:min-h-[560px]">
+            <img src="images/plan-first.png" alt="First floor plan" class="img-contain" />
+            <div class="absolute top-5 right-5 text-[10px] text-muted-foreground uppercase tracking-[0.2em] pointer-events-none">© Nobsed Properties · Drawing 002/A</div>
+          </div>
+          <div class="lg:col-span-4 order-1 lg:order-2 flex flex-col justify-center">
+            <h3 class="font-serif text-2xl mb-4">First Floor Features</h3>
+            <p class="text-secondary font-sans text-sm mb-8 leading-relaxed">Private sanctuary spaces crafted for ultimate rest and rejuvenation.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Master Bedroom Suite</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Walk-in Closet</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Bedrooms 1 &amp; 2</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Family Lounge</span></li>
+              <li class="flex items-center space-x-3 text-sm font-sans"><i data-lucide="chevron-right" class="w-4 h-4 text-accent"></i><span>Private Terraces</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RENDER GALLERY -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="max-w-xl reveal"><span class="text-xs uppercase tracking-[0.2em] font-bold text-accent block mb-4">Architectural Renders</span><h2 class="font-serif mb-0 text-4xl md:text-5xl">Immersive Experience</h2></div>
+      <p class="max-w-sm text-sm text-secondary font-sans leading-relaxed">*All images are architectural renders intended to represent the design intent and quality level of the final development.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12 max-w-[1440px] mx-auto" data-gallery></div>
+  </section>
+
+  <!-- NEXT STEP -->
+  <section class="bg-primary py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-96 h-96 border border-white/5 rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] border border-white/5 rounded-full pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-background font-serif text-4xl md:text-5xl mb-8 leading-tight">Ready to secure your piece of <br /><span class="italic text-accent">The Noble Homes?</span></h2>
+      <p class="text-background/60 text-lg font-sans mb-12 max-w-2xl mx-auto">We offer flexible structured payment plans designed for the diaspora and local market. View our installment schedules and construction milestones today.</p>
+      <a href="investment.html" class="group inline-flex items-center space-x-4 bg-accent text-white px-10 py-5 font-bold uppercase tracking-widest text-xs transition-all hover:bg-[#3D6629]"><span>View Payment Plans</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

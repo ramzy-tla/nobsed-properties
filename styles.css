@@ -1,0 +1,39 @@
+/* ===== Noble Homes — shared styles ===== */
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; background: #F9F8F6; color: #1A1A1A; -webkit-font-smoothing: antialiased; }
+h1,h2,h3,h4,h5,h6,.font-serif { font-family: 'Playfair Display', Georgia, serif; }
+
+/* layout helpers */
+.section-container { padding: 6rem 0; }
+@media (min-width:768px){ .section-container { padding: 8rem 0; } }
+.section-container > div { max-width: 80rem; margin: 0 auto; padding: 0 1.5rem; }
+@media (min-width:768px){ .section-container > div { padding: 0 3rem; } }
+
+.btn-primary { padding: 1.15rem 2.5rem; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; transition: all .3s; display:inline-flex; align-items:center; justify-content:center; gap:.6rem; }
+.btn-outline { padding: 1.15rem 2.5rem; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; border: 1px solid; transition: all .3s; display:inline-flex; align-items:center; justify-content:center; gap:.6rem; }
+
+/* subpage top offset so content clears the fixed navbar */
+.page-offset { padding-top: 88px; }
+
+/* image fit system — show complete images / plans */
+.img-cover { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.img-contain { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.plate { background: #ECE7DE; }
+.plate-dark { background: #14120F; }
+.plate-white { background: #ffffff; }
+
+/* misc */
+.vertical-text { writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1); }
+.reveal.in { opacity: 1; transform: none; }
+::selection { background: rgba(45,79,30,0.2); }
+
+input[type=range]{ -webkit-appearance:none; appearance:none; height:4px; border-radius:9999px; background:#EDEDED; cursor:pointer; width:100%; }
+input[type=range]::-webkit-slider-thumb{ -webkit-appearance:none; height:18px; width:18px; border-radius:9999px; background:#1A1A1A; }
+input[type=range]::-moz-range-thumb{ height:18px; width:18px; border:none; border-radius:9999px; background:#1A1A1A; }
+.custom-scrollbar::-webkit-scrollbar{ width:4px; }
+.custom-scrollbar::-webkit-scrollbar-thumb{ background:#E2E2E2; }
+
+@keyframes scrollDown{ 0%{transform:translateY(-100%)} 100%{transform:translateY(300%)} }
+@keyframes nhpulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+.nh-pulse { animation: nhpulse 2s ease-in-out infinite; }
