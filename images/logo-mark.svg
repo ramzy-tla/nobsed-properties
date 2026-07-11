@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nobsed Properties">
+<mask id="win"><rect x="236" y="112" width="50" height="196" fill="white"/><rect x="243" y="124" width="8" height="10" fill="black"/><rect x="258" y="124" width="8" height="10" fill="black"/><rect x="273" y="124" width="8" height="10" fill="black"/><rect x="243" y="146" width="8" height="10" fill="black"/><rect x="258" y="146" width="8" height="10" fill="black"/><rect x="273" y="146" width="8" height="10" fill="black"/><rect x="243" y="168" width="8" height="10" fill="black"/><rect x="258" y="168" width="8" height="10" fill="black"/><rect x="273" y="168" width="8" height="10" fill="black"/><rect x="243" y="190" width="8" height="10" fill="black"/><rect x="258" y="190" width="8" height="10" fill="black"/><rect x="273" y="190" width="8" height="10" fill="black"/><rect x="243" y="212" width="8" height="10" fill="black"/><rect x="258" y="212" width="8" height="10" fill="black"/><rect x="273" y="212" width="8" height="10" fill="black"/><rect x="243" y="234" width="8" height="10" fill="black"/><rect x="258" y="234" width="8" height="10" fill="black"/><rect x="273" y="234" width="8" height="10" fill="black"/><rect x="243" y="256" width="8" height="10" fill="black"/><rect x="258" y="256" width="8" height="10" fill="black"/><rect x="273" y="256" width="8" height="10" fill="black"/><rect x="243" y="278" width="8" height="10" fill="black"/><rect x="258" y="278" width="8" height="10" fill="black"/><rect x="273" y="278" width="8" height="10" fill="black"/></mask>
+<g fill="currentColor">
+<!-- roof -->
+<path d="M60 172 L200 66 L340 172" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- round window -->
+<circle cx="230" cy="110" r="15" fill="none" stroke="currentColor" stroke-width="4"/>
+<line x1="230" y1="96" x2="230" y2="124" stroke="currentColor" stroke-width="3.5"/>
+<line x1="216" y1="110" x2="244" y2="110" stroke="currentColor" stroke-width="3.5"/>
+<!-- N left stroke + serifs -->
+<rect x="110" y="150" width="34" height="158"/>
+<rect x="98" y="150" width="58" height="12"/>
+<rect x="98" y="296" width="58" height="12"/>
+<!-- N diagonal -->
+<polygon points="110,150 144,150 286,308 252,308"/>
+<!-- tower (right leg) with window cut-outs -->
+<rect x="236" y="112" width="50" height="196" mask="url(#win)"/>
+<rect x="228" y="296" width="66" height="12"/>
+</g>
+</svg>
