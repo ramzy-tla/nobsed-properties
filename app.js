@@ -67,33 +67,25 @@
   var footHost = $('#footer');
   if (footHost) {
     footHost.innerHTML =
-      '<footer class="bg-primary text-white pt-20 pb-10">' +
-        '<div class="max-w-7xl mx-auto px-6 md:px-12">' +
-          '<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">' +
-            '<div>' +
-              '<div class="flex items-center gap-3 mb-6"><img src="images/logo-mark.svg" alt="Nobsed" class="w-8 h-8" style="filter:brightness(0) invert(1)"/><h3 class="text-2xl font-serif tracking-tight">NOBSED</h3></div>' +
-              '<p class="text-[#A1A1A1] text-sm leading-relaxed mb-6 font-sans">Nobsed Properties Limited is an industry-leading real estate firm dedicated to creating high-value developments across Ghana.</p>' +
-              '<div class="space-y-2 text-xs font-sans text-[#7A7A7A] uppercase tracking-wider"><p>Reg No: CS148282015</p><p>TIN: C000548123X</p><p>Registrar-General’s Dept. (Ghana)</p></div>' +
-            '</div>' +
-            '<div><h4 class="text-xs uppercase tracking-[0.2em] font-bold mb-8 text-[#7A7A7A]">Navigation</h4><ul class="space-y-4 font-serif">' +
-              '<li><a href="development.html" class="hover:text-[#A1A1A1] transition-colors">The Noble Homes</a></li>' +
-              '<li><a href="trust.html" class="hover:text-[#A1A1A1] transition-colors">Trust &amp; Compliance</a></li>' +
-              '<li><a href="investment.html" class="hover:text-[#A1A1A1] transition-colors">Diaspora Guide</a></li>' +
-              '<li><a href="trust.html" class="hover:text-[#A1A1A1] transition-colors">Construction Pedigree</a></li>' +
-            '</ul></div>' +
-            '<div><h4 class="text-xs uppercase tracking-[0.2em] font-bold mb-8 text-[#7A7A7A]">Inquiries</h4><ul class="space-y-4 text-sm font-sans">' +
-              '<li class="flex items-start space-x-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-accent"></i><div class="space-y-1"><p>+233 20 000 0000 <span class="text-xs text-[#7A7A7A] ml-2">(GH)</span></p><p>+44 20 0000 0000 <span class="text-xs text-[#7A7A7A] ml-2">(UK)</span></p></div></li>' +
-              '<li class="flex items-center space-x-3"><i data-lucide="mail" class="w-4 h-4 text-accent"></i><a href="mailto:info@nobsed.com" class="hover:underline">info@nobsed.com</a></li>' +
-              '<li class="flex items-start space-x-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-accent"></i><p>No. 45 Independence Ave, Accra, Ghana</p></li>' +
-            '</ul></div>' +
-            '<div><h4 class="text-xs uppercase tracking-[0.2em] font-bold mb-8 text-[#7A7A7A]">Follow Us</h4>' +
-              '<div class="flex space-x-6 mb-8"><a href="#" class="hover:text-accent transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="#" class="hover:text-accent transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="#" class="hover:text-accent transition-colors"><i data-lucide="globe" class="w-5 h-5"></i></a></div>' +
-              '<p class="text-xs text-[#7A7A7A] italic leading-relaxed">“Building more than just walls; we build lasting legacies for the diaspora community.”</p>' +
+      '<footer class="bg-primary text-white">' +
+        '<div class="max-w-7xl mx-auto px-6 md:px-12 py-12">' +
+          '<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">' +
+            '<a href="index.html" class="flex items-center gap-3"><img src="images/logo-mark.svg" alt="Nobsed" class="w-8 h-8" style="filter:brightness(0) invert(1)"/><span class="leading-tight"><span class="block text-xl font-serif tracking-tight">NOBSED</span><span class="block text-[10px] uppercase tracking-[0.2em] text-[#8A8175]">Properties Limited &middot; Accra, Ghana</span></span></a>' +
+            '<nav class="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm font-serif">' +
+              '<a href="development.html" class="hover:text-[#B9B0A2] transition-colors">The Development</a>' +
+              '<a href="trust.html" class="hover:text-[#B9B0A2] transition-colors">Construction &amp; Trust</a>' +
+              '<a href="investment.html" class="hover:text-[#B9B0A2] transition-colors">Investment</a>' +
+              '<a href="investment.html#contact" class="hover:text-[#B9B0A2] transition-colors">Contact</a>' +
+            '</nav>' +
+            '<div class="flex items-center gap-4">' +
+              '<a href="mailto:info@nobsed.com" class="hover:text-accent transition-colors" aria-label="Email"><i data-lucide="mail" class="w-5 h-5"></i></a>' +
+              '<a href="#" class="hover:text-accent transition-colors" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>' +
+              '<a href="#" class="hover:text-accent transition-colors" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>' +
             '</div>' +
           '</div>' +
-          '<div class="pt-8 border-t border-[#2A2A2A] flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-[0.1em] text-[#7A7A7A]">' +
-            '<p>© ' + new Date().getFullYear() + ' Nobsed Properties Limited. All Rights Reserved.</p>' +
-            '<div class="flex space-x-8"><a href="#" class="hover:text-white">Privacy Policy</a><a href="#" class="hover:text-white">Terms of Sale</a><a href="#" class="hover:text-white">Legal Documentation</a></div>' +
+          '<div class="mt-8 pt-6 border-t border-[#39352E] flex flex-col sm:flex-row justify-between items-center gap-3 text-[10px] uppercase tracking-[0.12em] text-[#8A8175]">' +
+            '<span>&copy; ' + new Date().getFullYear() + ' Nobsed Properties Limited. All rights reserved.</span>' +
+            '<span class="flex gap-6"><a href="#" class="hover:text-white">Privacy</a><a href="#" class="hover:text-white">Terms of Sale</a><span>+233 20 000 0000</span></span>' +
           '</div>' +
         '</div>' +
       '</footer>';
@@ -138,7 +130,7 @@
   var gal = $('[data-gallery]');
   if (gal) gal.innerHTML = renders.map(function (r) {
     return '<figure class="reveal group"><div class="relative aspect-[16/10] overflow-hidden plate">' +
-      '<img src="' + r.url + '" alt="' + r.title + '" class="img-contain transition-transform duration-700 group-hover:scale-[1.03]" />' +
+      '<img src="' + r.url + '" alt="' + r.title + '" class="img-cover transition-transform duration-700 group-hover:scale-[1.03]" />' +
       '<span class="absolute top-4 left-4 text-[10px] uppercase tracking-widest text-accent bg-background/90 px-3 py-1">' + r.cat + '</span></div>' +
       '<figcaption class="mt-3 text-sm font-serif text-primary">' + r.title + '</figcaption></figure>';
   }).join('');
