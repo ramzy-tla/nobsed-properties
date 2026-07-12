@@ -47,13 +47,13 @@
     if (!nav) return;
     nav.className = 'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ' + (solid ? 'bg-white shadow-sm py-3.5' : 'bg-transparent py-6');
     var dark = solid; // dark text when solid
-    $$('.nav-link').forEach(function (a) { a.style.color = dark ? '#1A1A1A' : '#FFFFFF'; a.style.opacity = a.classList.contains('nav-active') ? '0.55' : '1'; });
+    $$('.nav-link').forEach(function (a) { a.style.color = dark ? '#262420' : '#FFFFFF'; a.style.opacity = a.classList.contains('nav-active') ? '0.55' : '1'; });
     var b = $('.nav-brand'), s = $('.nav-sub'), lg = $('.nav-logo'), cta = $('.nav-cta'), tg = $('#navToggle');
-    if (b) b.style.color = dark ? '#1A1A1A' : '#FFFFFF';
-    if (s) s.style.color = dark ? '#4A4A4A' : '#FFFFFF';
+    if (b) b.style.color = dark ? '#262420' : '#FFFFFF';
+    if (s) s.style.color = dark ? '#6E6459' : '#FFFFFF';
     if (lg) lg.style.filter = dark ? 'none' : 'brightness(0) invert(1)';
-    if (cta) { cta.style.borderColor = dark ? '#1A1A1A' : '#FFFFFF'; cta.style.color = dark ? '#1A1A1A' : '#FFFFFF'; }
-    if (tg) tg.style.color = dark ? '#1A1A1A' : '#FFFFFF';
+    if (cta) { cta.style.borderColor = dark ? '#262420' : '#FFFFFF'; cta.style.color = dark ? '#262420' : '#FFFFFF'; }
+    if (tg) tg.style.color = dark ? '#262420' : '#FFFFFF';
   }
   if (HOME_HERO) {
     var onScroll = function () { applyNav(window.scrollY > 60); };
@@ -111,7 +111,7 @@
       '<div class="flex justify-between items-start mb-6"><div class="p-3 bg-background text-accent"><i data-lucide="' + s.icon + '" class="w-7 h-7"></i></div>' +
       '<div class="flex items-center space-x-1.5 px-2.5 py-1 bg-[#F1F5F0] rounded-full"><div class="w-1.5 h-1.5 rounded-full bg-accent"></div><span class="text-[10px] font-bold uppercase tracking-widest text-accent">' + s.status + '</span></div></div>' +
       '<h3 class="font-serif text-xl mb-2 text-primary">' + s.title + '</h3>' +
-      '<p class="text-xs uppercase tracking-widest font-bold text-[#4A4A4A] mb-4">' + s.authority + '</p>' +
+      '<p class="text-xs uppercase tracking-widest font-bold text-[#6E6459] mb-4">' + s.authority + '</p>' +
       '<p class="text-sm text-[#7A7A7A] leading-relaxed flex-grow">' + s.description + '</p></div>';
   }).join('');
   $$('[data-seals]').forEach(function (el) { el.innerHTML = sealHTML; });
