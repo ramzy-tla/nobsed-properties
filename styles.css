@@ -1,12 +1,6 @@
 /* ===== Noble Homes — shared styles ===== */
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', system-ui, sans-serif; background: #FAF7F2; color: #262420; -webkit-font-smoothing: antialiased; }
-/* kill stark white — warm every white surface to a soft paper tone */
-.bg-white { background-color: #FDF9F1 !important; }
-.text-clay { color: #B5714B; }
-.bg-clay { background-color: #B5714B; }
-.border-clay { border-color: #B5714B; }
-.bg-sand-soft { background-color: #F2E7D6; }
+body { font-family: 'Inter', system-ui, sans-serif; background: #F9F8F6; color: #1A1A1A; -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,h5,h6,.font-serif { font-family: 'Playfair Display', Georgia, serif; }
 
 /* layout helpers */
@@ -24,9 +18,9 @@ h1,h2,h3,h4,h5,h6,.font-serif { font-family: 'Playfair Display', Georgia, serif;
 /* image fit system — show complete images / plans */
 .img-cover { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .img-contain { width: 100%; height: 100%; object-fit: contain; object-position: center; }
-.plate { background: #EBDFCC; }
-.plate-dark { background: #211E19; }
-.plate-white { background: #FDF9F1; }
+.plate { background: #ECE7DE; }
+.plate-dark { background: #14120F; }
+.plate-white { background: #ffffff; }
 
 /* misc */
 .vertical-text { writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); }
