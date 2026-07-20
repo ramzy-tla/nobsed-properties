@@ -18,7 +18,7 @@
       '<nav id="siteNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">' +
         '<div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">' +
           '<a href="index.html" class="flex items-center gap-3">' +
-            '<img src="images/logo-mark.svg" alt="Nobsed" class="nav-logo w-9 h-9" />' +
+            '<img src="images/logo-mark.png" alt="Nobsed" class="nav-logo w-9 h-9" />' +
             '<span class="flex flex-col leading-none">' +
               '<span class="nav-brand text-2xl md:text-[1.7rem] font-serif tracking-tight leading-none">NOBSED</span>' +
               '<span class="nav-sub text-[10px] uppercase tracking-[0.22em] mt-1.5 opacity-80">Properties Limited</span>' +
@@ -70,7 +70,7 @@
       '<footer class="bg-primary text-white">' +
         '<div class="max-w-7xl mx-auto px-6 md:px-12 py-12">' +
           '<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">' +
-            '<a href="index.html" class="flex items-center gap-3"><img src="images/logo-mark.svg" alt="Nobsed" class="w-8 h-8" style="filter:brightness(0) invert(1)"/><span class="leading-tight"><span class="block text-xl font-serif tracking-tight">NOBSED</span><span class="block text-[10px] uppercase tracking-[0.2em] text-[#8A8175]">Properties Limited &middot; Accra, Ghana</span></span></a>' +
+            '<a href="index.html" class="flex items-center gap-3"><img src="images/logo-mark.png" alt="Nobsed" class="w-8 h-8" style="filter:brightness(0) invert(1)"/><span class="leading-tight"><span class="block text-xl font-serif tracking-tight">NOBSED</span><span class="block text-[10px] uppercase tracking-[0.2em] text-[#8A8175]">Properties Limited &middot; Accra, Ghana</span></span></a>' +
             '<nav class="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm font-serif">' +
               '<a href="development.html" class="hover:text-[#B9B0A2] transition-colors">The Development</a>' +
               '<a href="trust.html" class="hover:text-[#B9B0A2] transition-colors">Construction &amp; Trust</a>' +
